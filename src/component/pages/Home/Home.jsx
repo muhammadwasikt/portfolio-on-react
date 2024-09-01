@@ -1,14 +1,14 @@
 import './Home.css'
 const Home = ()=>{
-<div className="container">
+return(<div className="container">
     <div className="hero-content">
-        
+        <h1>I AM MUHAMMAD WASI</h1>
     </div>
     <div className="hero-section">
 
     </div>
 
-</div>
+</div>)
 }
 
 export default Home;
