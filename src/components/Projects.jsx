@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     name: "BLOGS APP",
-    technologies: "Frontend",
+    technologies: "Firebase",
     image: employeeMSImage,
     github: "https://github.com/muhammadwasikt/blog-app",
   },
