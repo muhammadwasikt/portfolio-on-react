@@ -1,32 +1,6 @@
-import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
-import gameImg from "../assets/game-img.png";
 
+import project from '../utils/constant/project'
 
-const projects = [
-  {
-    id: 1,
-    name: "BLOGS APP",
-    technologies: "Firebase",
-    image: employeeMSImage,
-    github: "https://github.com/muhammadwasikt/blog-app",
-  },
-  {
-    id: 2,
-    name: "MORRENT RENTAL",
-    technologies: "Frontend",
-    image: bookMSImage,
-    github: "https://github.com/muhammadwasikt/Morent-rental",
-  },
-  {
-    id: 3,
-    name: "SNAKE GAME",
-    technologies: "Game",
-    image: gameImg,
-    github: "https://github.com/muhammadwasikt/snake-game-for-practice",
-  },
-];
 
 const Projects = () => {
   return (
@@ -34,7 +8,7 @@ const Projects = () => {
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {project.map((project) => (
             <div key={project.id} className="bg-gray-800 p-6 rounded-lg hover:shadow-lg 
             transform transition-transform duration-300 hover:scale-105">
               <img src={project.image} alt={project.name} className="rounded-lg mb-4 
