@@ -1,13 +1,13 @@
 
 import { Route, Routes } from 'react-router'
-import About from './components/About'
-import Contact from './components/Contact'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
+import Hero from './pages/Hero'
 import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Service from './components/Service'
-import AppLayout from './components/AppLayout'
+import Projects from './pages/Projects'
+import Service from './pages/Service'
+import AppLayout from './pages/AppLayout'
 
 function App() {
 

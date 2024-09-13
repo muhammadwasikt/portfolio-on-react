@@ -1,10 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import About from './About'
-import Service from './Service'
-import Projects from './Projects'
-import Contact from './Contact'
-import AppLayout from './AppLayout'
 
 const Navbar = () => {
   return (
