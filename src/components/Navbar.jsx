@@ -14,7 +14,7 @@ const click2 = ()=>{
   setIsResponsive(false)
 }
 
-let resposive = 'w-[600%] h-[40vh] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5'
+let resposive = 'w-[600%] h-[45vh] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5'
 
   return (
     <nav className='bg-black text-white px-8 md:px-16 lg:px-24 flex justify-center '>

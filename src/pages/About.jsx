@@ -20,7 +20,7 @@ const About = () => {
               seamless and efficient user experiences.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   HTML & CSS
                 </label>
@@ -31,7 +31,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   Java Script
                 </label>
@@ -42,18 +42,18 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   React JS
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-3/12"
+                    transform transition-transform duration-300 hover:scale-105 w-4/12"
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   FireBase
                 </label>
@@ -64,7 +64,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   Bootstrap
                 </label>
@@ -75,7 +75,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="xl:flex items-center md:flex-co leading-8 ">
                 <label htmlFor="htmlandcss" className="w-2/12">
                  Tailwind CSS
                 </label>
