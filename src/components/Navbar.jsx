@@ -14,13 +14,13 @@ const click2 = ()=>{
   setIsResponsive(false)
 }
 
-let resposive = 'w-[600%] h-[100%] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5'
+let resposive = `w-[600%] h-[300px] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5`
 
   return (
-    <nav className='bg-black text-white px-8 md:px-16 lg:px-24 flex justify-center '>
+    <nav className='sticky top-0 bg-[#080808] text-white px-8 md:px-16 lg:px-24 flex justify-center '>
         <div className={isResponsive ? 'absolute h-[60%] container px-6 py-2 flex justify-center md:justify-between items-top':'container py-2 flex justify-center md:justify-between items-center'}>
             <div className='text-2xl font-bold '>WASI</div>
-            <div className={isResponsive ? resposive : 'space-x-6 xl:inline-flex md:inline-flex sm: hidden items-center'}>
+            <div className={isResponsive ? resposive : `space-x-6 xl:inline-flex md:inline-flex sm: hidden items-center`}>
                 <NavLink onClick={click2} to='/home' className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Home</NavLink>
                 <NavLink onClick={click2} to="/about" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>About Me</NavLink>
                 <NavLink onClick={click2} to="/services" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Services</NavLink>
