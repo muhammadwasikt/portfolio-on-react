@@ -1,7 +1,11 @@
 import React from 'react'
 import HeroImage from '/assets/hero-image.png'
+import Button from '../components/common/button'
 
 const Hero = () => {
+  const clicks = ()=>{
+    window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-3147e.appspot.com/o/My%20Resume.pdf?alt=media&token=bd553e49-8ee0-448c-b375-7b68ba5b0082', '_blank')
+  }
   return (
     <div className='bg-black text-white text-center py-16'>
         <img src={HeroImage} alt="" 
@@ -16,12 +20,8 @@ const Hero = () => {
             I specialize in building modern and responsive web applications.
         </p>
         <div className='mt-8 space-x-4'>
-            <button
-            className='bg-gradient-to-r from-green-400 to-blue-500 text-white
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Contact With Me</button>
-            <button
-            className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'><a href="https://rb.gy/nuv9zv" target='_blank'>Resume</a></button>
+            <Button title='Contact with me' />
+            <Button title='Resume' isClassName click={clicks} />
         </div>
 
     </div>

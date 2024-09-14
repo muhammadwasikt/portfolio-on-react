@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Button from "./common/button";
+import Input from "./common/input";
 
 const Footer = () => {
   return (
@@ -14,19 +16,8 @@ const Footer = () => {
           </div>
           <div className="flex-1 w-full">
             <form className="flex items-center justify-center">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600 
-                focus:outline-none focus:border-green-400"
-              />
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 
-                py-2 rounded-r-lg"
-              >
-                Subscribe
-              </button>
+              <Input types='email' placeholders='Enter your email' />
+              <Button title='Subscribe' />
             </form>
           </div>
         </div>
