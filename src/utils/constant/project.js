@@ -1,7 +1,7 @@
 
-import employeeMSImage from "/assets/employee-ms.png";
-import bookMSImage from "/assets/admin-dashboard.png";
-import gameImg from "/assets/game-img.png";
+import employeeMSImage from "/assets/images/employee-ms.png";
+import bookMSImage from "/assets/images/admin-dashboard.png";
+import gameImg from "/assets/images/game-img.png";
 
 const projects = [
     {

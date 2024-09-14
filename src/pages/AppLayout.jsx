@@ -1,9 +1,8 @@
-import { Route, Routes } from "react-router"
 import About from "./About"
 import Contact from "./Contact"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import Hero from "./Hero"
-import Navbar from "../components/Navbar"
+// import Navbar from "../components/Navbar"
 import Projects from "./Projects"
 import Service from "./Service"
 
@@ -16,8 +15,6 @@ const AppLayout = () => {
       <Service />
       <Projects />
       <Contact />
-
-
     </div>
   )
 }

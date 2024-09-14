@@ -1,5 +1,4 @@
-import React from 'react'
-import HeroImage from '/assets/hero-image.png'
+import HeroImage from '/assets/images/hero-image.png'
 import Button from '../components/common/button'
 
 const Hero = () => {

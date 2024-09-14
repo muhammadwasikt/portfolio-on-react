@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 import Button from '../components/common/button'
 import Input from '../components/common/input'
