@@ -13,6 +13,9 @@ const click = ()=>{
 const click2 = ()=>{
   setIsResponsive(false)
 }
+const sendMail = ()=>{
+  window.location.href = "mailto:wasikhatri11@gmail.com?subject=Inquiry from Portfolio&body=Hello Wasi,";
+}
 
 let resposive = ` w-[600%] h-[300px] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5`
 
@@ -26,7 +29,7 @@ let resposive = ` w-[600%] h-[300px] flex flex-col leading-[45px] mx-auto my-10 
                 <NavLink onClick={click2} to="/services" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Services</NavLink>
                 <NavLink onClick={click2} to="/project" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Projects</NavLink>
                 <NavLink onClick={click2} to="/contact" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Contact</NavLink>
-                <Button title='Contact Me' isResponsive={isResponsive} />
+                <Button title='Contact Me' isResponsive={isResponsive} click={sendMail} />
             </div>
             <div className="xl:hidden md:hidden text-3xl flex justify-end w-11/12">
                 <HiMiniBars3BottomRight className={ isResponsive && "hidden"} onClick={click} />
