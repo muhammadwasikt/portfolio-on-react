@@ -5,8 +5,8 @@ const Hero = () => {
   const clicks = ()=>{
     window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-3147e.appspot.com/o/My%20Resume.pdf?alt=media&token=bd553e49-8ee0-448c-b375-7b68ba5b0082', '_blank')
   }
-  const sendMail = ()=>{
-    window.location.href = "mailto:wasikhatri11@gmail.com?subject=Inquiry from Portfolio&body=Hello Wasi,";
+  const linkedin = ()=>{
+    window.open('https://www.linkedin.com/in/muhammad-wasi-imran-khatri/', '_blank');
   }
   return (
     <div className='bg-black text-white text-center py-16'>
@@ -22,7 +22,7 @@ const Hero = () => {
             I specialize in building modern and responsive web applications.
         </p>
         <div className='mt-8 space-x-4'>
-            <Button title='Contact with me' click={sendMail} />
+            <Button title='Connect with me' click={linkedin} />
             <Button title='Resume' isClassName click={clicks} />
         </div>
 
