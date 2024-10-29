@@ -26,8 +26,8 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
+                    className="bg-blue-400 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-12/12"
                   ></div>
                 </div>
               </div>
@@ -37,8 +37,8 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
+                    className="bg-blue-400 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-10/12"
                   ></div>
                 </div>
               </div>
@@ -48,8 +48,8 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-4/12"
+                    className="bg-blue-400 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-7/12"
                   ></div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    className="bg-blue-400 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-6/12"
                   ></div>
                 </div>
@@ -70,7 +70,7 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    className="bg-blue-400 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-7/12"
                   ></div>
                 </div>
@@ -81,8 +81,19 @@ const About = () => {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-4/12"
+                    className="bg-blue-400 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-8/12"
+                  ></div>
+                </div>
+              </div>
+              <div className="md:flex items-center sm:flex-co leading-8 ">
+                <label htmlFor="htmlandcss" className="w-2/12">
+                 Material UI
+                </label>
+                <div className="grow bg-gray-800 rounded-full h-2.5">
+                  <div
+                    className="bg-blue-400 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-5/12"
                   ></div>
                 </div>
               </div>
@@ -90,14 +101,14 @@ const About = () => {
             <div className="mt-12 flex justify-between text-center">
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
+                bg-blue-400">
                         Under 1
                     </h3>
                     <p>Year Experience</p>
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
+                bg-blue-400">
                         3
                     </h3>
                     <p>Projects Completed</p>

@@ -3,6 +3,7 @@ import employeeMSImage from "/assets/images/employee-ms.png";
 import bookMSImage from "/assets/images/admin-dashboard.png";
 import gameImg from "/assets/images/game-img.png";
 
+
 const projects = [
     {
       id: 1,
@@ -20,10 +21,10 @@ const projects = [
     },
     {
       id: 3,
-      name: "SNAKE GAME",
-      technologies: "Game",
+      name: "CHAWK BAZAR",
+      technologies: "React",
       image: gameImg,
-      github: "https://github.com/muhammadwasikt/snake-game-for-practice",
+      github: "https://github.com/muhammadwasikt/mini-hackthon-react",
     },
   ];
 
