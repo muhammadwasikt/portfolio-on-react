@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Projects from './pages/Projects'
 import Service from './pages/Service'
 import AppLayout from './pages/AppLayout'
+import Admin from './admin/Admin'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
         <Route path='/services' element={<Service />} />
         <Route path='/hero' element={<Hero />} />
         <Route path='/project' element={<Projects />} />
+        <Route path='/auth/admin' element={<Admin />} />
+
         {/* <Route path='*' element='error' /> */}
 
       </Routes>

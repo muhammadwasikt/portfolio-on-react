@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore , collection, addDoc, getDoc } from "firebase/firestore";
+import { getAuth ,signInWithEmailAndPassword ,onAuthStateChanged } from "firebase/auth";
+import { getFirestore , collection, addDoc, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -17,4 +17,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getFirestore(app)
 
-export {auth , db ,collection, addDoc, getDoc};
+export {auth , db ,collection, addDoc, getDocs, signInWithEmailAndPassword , onAuthStateChanged};

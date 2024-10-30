@@ -19,7 +19,6 @@ const Contact = () => {
         userName: name,
         userEmail: email,
         userMessage: message,
-        time: new Date(),
       });
       toast.success("Thank you for your feedback!");
       console.log("Document written with ID: ", docRef.id);
