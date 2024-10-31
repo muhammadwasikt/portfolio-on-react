@@ -13,6 +13,8 @@ import Admin from './admin/Admin.jsx'
 import 'react-toastify/dist/ReactToastify.css';
 import { AdminProvider } from './admin/context/AdminContext.jsx'
 import { FeedbackProvider } from './admin/context/FeedbackContext.jsx'
+import AppLayout from './pages/AppLayout.jsx'
+import Home from './pages/Home.jsx'
 
 
 
@@ -21,11 +23,15 @@ import { FeedbackProvider } from './admin/context/FeedbackContext.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App />
+  },
+  {
+    path: '/',
+    element: <AppLayout />,
     children: [
       {
         path: '/home',
-        element: <App />
+        element: <Home />
       },
       {
         path: '/about',

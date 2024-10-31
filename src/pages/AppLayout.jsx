@@ -1,20 +1,15 @@
-import About from "./About"
-import Contact from "./Contact"
-// import Footer from "../components/Footer"
-import Hero from "./Hero"
-// import Navbar from "../components/Navbar"
-import Projects from "./Projects"
-import Service from "./Service"
+import Footer from "../components/Footer"
+import Navbar from "../components/Navbar"
+import {Outlet} from 'react-router-dom'
+
 
 
 const AppLayout = () => {
   return (
     <div>
-      <Hero />
-      <About />
-      <Service />
-      <Projects />
-      <Contact />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   )
 }
