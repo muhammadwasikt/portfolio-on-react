@@ -3,7 +3,7 @@ import Button from '../components/common/button'
 
 const Hero = () => {
   const clicks = ()=>{
-    window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-3147e.appspot.com/o/My%20Resume.pdf?alt=media&token=bd553e49-8ee0-448c-b375-7b68ba5b0082', '_blank')
+    window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-3147e.appspot.com/o/M.%20WASI%20IMRAN.pdf?alt=media&token=ff543806-d3a5-40ef-9386-4d7b3804b4fa', '_blank')
   }
   const linkedin = ()=>{
     window.open('https://www.linkedin.com/in/muhammad-wasi-imran-khatri/', '_blank');
