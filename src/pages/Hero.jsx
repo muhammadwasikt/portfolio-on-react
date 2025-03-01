@@ -15,7 +15,7 @@ const Hero = () => {
     window.open('https://www.linkedin.com/in/muhammad-wasi-imran-khatri/', '_blank');
   }
   return (
-    <div className='bg-black text-white text-center py-24'>
+    <div className='bg-black text-white text-center py-24 px-2'>
       <img src={HeroImage} alt=""
         className='mx-auto mb-8 w-48 h-48 rounded-full object-contain transform 
         transition-transform duration-300 hover:scale-105'/>
