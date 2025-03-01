@@ -1,39 +1,92 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import Button from './common/button'
-import { HiMiniBars3BottomRight } from 'react-icons/hi2'
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import Button from "./common/button";
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
-const [isResponsive , setIsResponsive] = useState(false)
+  const [isResponsive, setIsResponsive] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-const click = ()=>{
-  setIsResponsive(!isResponsive)
-}
-const sendMail = ()=>{
-  window.location.href = "mailto:wasikhatri11@gmail.com?subject=Inquiry from Portfolio&body=Hello Wasi,";
-}
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
 
-let resposive = ` w-[600%] h-[300px] flex flex-col leading-[45px] mx-auto my-10 bg-[#0A1128] z-10 p-5`
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  const click = () => setIsResponsive(!isResponsive);
+  const sendMail = () => {
+    window.location.href =
+      "mailto:wasikhatri11@gmail.com?subject=Inquiry from Portfolio&body=Hello Wasi,";
+  };
 
   return (
-    <nav className='sticky top-0 bg-[#080808] z-10 text-white px-8 md:px-16 lg:px-24 flex justify-center '>
-        <div className={isResponsive ? 'bg-black absolute container py-2 px-8 flex justify-center md:justify-between ':'container py-2 flex justify-center md:justify-between items-center'}>
-            <div className='text-2xl font-bold cursor-pointer text-blue-200'>WASI</div>
-            <div className={isResponsive ? resposive : `space-x-6 xl:inline-flex md:inline-flex sm: hidden items-center`}>
-                <NavLink onClick={isResponsive && click} to='/home' className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Home</NavLink>
-                <NavLink onClick={isResponsive && click} to="/about" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>About Me</NavLink>
-                <NavLink onClick={isResponsive && click} to="/services" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Services</NavLink>
-                <NavLink onClick={isResponsive && click} to="/project" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Projects</NavLink>
-                <NavLink onClick={isResponsive && click} to="/contact" className={isResponsive ? 'hover:text-gray-400 border-b-2':'hover:text-gray-400'}>Contact</NavLink>
-                <Button title='Contact Me' isResponsive={isResponsive} click={sendMail} />
-            </div>
-            <div className="xl:hidden md:hidden text-3xl flex justify-end w-11/12">
-                {isResponsive ? <AiOutlineCloseCircle onClick={click}/> : <HiMiniBars3BottomRight onClick={click}/>}
-            </div>
+    <nav
+      className={`fixed top-0 left-0 w-full bg-[#080808] z-20 text-white px-6 py-4 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
+    >
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <div className="text-2xl font-bold cursor-pointer text-blue-200">
+          WASI
         </div>
-    </nav>
-  )
-}
 
-export default Navbar
+        <div className="hidden md:flex space-x-6 items-center">
+          {["Home", "About", "Services", "Project", "Contact"].map(
+            (item, index) => (
+              <NavLink
+                key={index}
+                to={`/${item.toLowerCase().replace(" ", "")}`}
+                className="hover:text-gray-400 transition"
+              >
+                {item}
+              </NavLink>
+            )
+          )}
+          <Button title="Contact Me" click={sendMail} />
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden text-3xl cursor-pointer" onClick={click}>
+          <HiMiniBars3BottomRight />
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`fixed top-0 left-0 w-full h-screen bg-[#0A1128] flex flex-col p-7 space-y-6 text-lg transform ${isResponsive ? "translate-x-0" : "-translate-x-full"
+            } transition-transform duration-300`}
+        >
+          <AiOutlineCloseCircle
+            className="absolute top-5 right-5 text-4xl cursor-pointer"
+            onClick={click}
+          />
+
+          {["Home", "About", "Services", "Project", "Contact"].map(
+            (item, index) => (
+              <NavLink
+                key={index}
+                to={`/${item.toLowerCase().replace(" ", "")}`}
+                onClick={click}
+                className="hover:text-gray-400 transition text-xl"
+              >
+                {item}
+              </NavLink>
+            )
+          )}
+          <Button title="Contact Me" click={sendMail} />
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

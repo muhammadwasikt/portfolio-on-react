@@ -1,5 +1,5 @@
 
-import employeeMSImage from "/assets/images/employee-ms.png";
+import shoppingCart from "/assets/images/shopping-cart.png";
 import bookMSImage from "/assets/images/admin-dashboard.png";
 import gameImg from "/assets/images/game-img.png";
 
@@ -7,10 +7,10 @@ import gameImg from "/assets/images/game-img.png";
 const projects = [
     {
       id: 1,
-      name: "BLOGS APP",
-      technologies: "Firebase",
-      image: employeeMSImage,
-      github: "https://github.com/muhammadwasikt/blog-app",
+      name: "Shopping Cart",
+      technologies: "React Js",
+      image: shoppingCart,
+      github: "https://github.com/muhammadwasikt/shopping-cart",
     },
     {
       id: 2,
